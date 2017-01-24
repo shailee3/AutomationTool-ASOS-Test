@@ -1,0 +1,41 @@
+﻿<Window x:Class="WinUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="309" Width="525">
+    <Grid Background="Lavender">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Select Env" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="76" FontWeight="Bold"/>
+        <ComboBox x:Name="EnvName" HorizontalAlignment="Left" Height="23" Margin="91,10,0,0" VerticalAlignment="Top" Width="256"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="53" Margin="10,41,0,0" VerticalAlignment="Top" Width="497" Background="Bisque"/>
+        <Label Content="Enter User Name" HorizontalAlignment="Left" Margin="91,53,0,0" VerticalAlignment="Top" Width="103" Foreground="Black"/>
+        <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="23" Margin="199,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Foreground="Black"/>
+        <Button Content="Create User" HorizontalAlignment="Left" Margin="410,53,0,0" VerticalAlignment="Top" Width="88" Click="Join" Height="26"/>
+        <Label Content="Sign Up" HorizontalAlignment="Left" Margin="19,53,0,0" VerticalAlignment="Top" Width="56" FontWeight="Bold"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="131" Margin="10,99,0,0" VerticalAlignment="Top" Width="306" Background="CadetBlue">
+
+        </Border>
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="19,135,0,0" VerticalAlignment="Top" Width="76" Foreground="Black" Height="26"/>
+        <TextBox x:Name="LoginUserName" HorizontalAlignment="Left" Height="23" Margin="100,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Foreground="Black"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="19,166,0,0" VerticalAlignment="Top" Width="76" Foreground="Black" Height="25"/>
+        <TextBox x:Name="LoginPassword" HorizontalAlignment="Left" Height="23" Margin="100,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Foreground="Black"/>
+        <Button x:Name="SignIn" Content="LogIn" HorizontalAlignment="Left" Margin="221,204,0,0" VerticalAlignment="Top" Width="75" Click="SignIn_Click"/>
+        <Label Content="Sign In" HorizontalAlignment="Left" Margin="20,108,0,0" VerticalAlignment="Top" Width="53" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.985"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="Quit Driver" HorizontalAlignment="Left" Margin="421,10,0,0" VerticalAlignment="Top" Width="87" Click="Button_Click_1"/>
+        <Border BorderBrush="Black" BorderThickness="1" Background="Azure" HorizontalAlignment="Left" Height="131" Margin="321,99,0,0" VerticalAlignment="Top" Width="186"/>
+        <ComboBox x:Name="cb_country" Margin="410,112,0,0" HorizontalAlignment="Left" Width="87" Height="29" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cb_currency" Margin="409,146,0,0" Height="29" VerticalAlignment="Top" HorizontalAlignment="Left" Width="88"/>
+        <Label Content="Country" HorizontalAlignment="Left" Margin="334,113,0,0" VerticalAlignment="Top" Width="69" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"/>
+        <Label Content="Currency" HorizontalAlignment="Left" Margin="336,148,0,0" VerticalAlignment="Top" Width="65" FontWeight="Bold" RenderTransformOrigin="0.595,1.419"/>
+    </Grid>
+</Window>
